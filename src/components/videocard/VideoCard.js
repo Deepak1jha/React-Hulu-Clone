@@ -1,16 +1,27 @@
 import React from "react";
 import "../videocard/VideoCard.css";
-export default function VideoCard({movie}) {
+import TextTruncate from 'react-text-truncate';
+import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 
+export default function VideoCard({movie}) {
+  console.table(movie)
+  const base_url = "https://image.tmdb.org/t/p/original/";
   return (
     <div className="videoCard">
       <img
-        src="https://preview.redd.it/eljkt0uuafz31.jpg?width=960&crop=smart&auto=webp&s=b5326fb518dd3400ccc25552080f39ded5c01d11"
-        alt=""/>
-      <p>fak sfsfjsfhsskfhu</p>
-      <h2>MOive Title</h2>
-      <p>Number of like</p>
-      <p>Number of likefdsdfs</p>
+        src={`${base_url}${movie.backdrop_path || movie.poster_path}`}
+        alt="Movie poster"/>
+      <TextTruncate
+        line={1}
+        element="p"
+        truncateText="...."
+        text={movie.overview}
+      />
+      <h2>{movie.original_title || movie.title}</h2>
+      <p className="videoCard_stats">
+        {movie.media_type && `${movie.media_type}`}
+        {movie.release_date || movie.first_air_date}
+        <ThumbUpIcon/>{" "}{movie.vote_count}</p>
 
     </div>
   )

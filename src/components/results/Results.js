@@ -2,22 +2,21 @@ import React, {useEffect, useState} from "react";
 import "../results/Results.css";
 import VideoCard from "../videocard/VideoCard";
 import axios from "../../api/axios/axios";
-import request from "../../api/request/request";
 
-export default function Results() {
+export default function Results({selectedOption}) {
 
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     async function fetchData() {
-      const requestData = await axios.get(request.fetchPopular);
+      const requestData = await axios.get(selectedOption);
       setMovies(requestData.data.results);
     }
 
     fetchData();
-  }, [])
+  }, [selectedOption])
   return (
     <div className="results">
-      {movies.map((movie) => (<VideoCard/>)
+      {movies.map((movie) => (<VideoCard movie={movie}/>)
       )}
     </div>
   )

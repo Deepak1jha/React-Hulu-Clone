@@ -1,11 +1,12 @@
 import React from "react";
 import "../navbar/Navbar.css";
+import request from "../../api/request/request";
 
-export default function Navbar() {
+export default function Navbar({setSelectedOption}) {
   return (
     <div className="navbar">
-      <h2>Trending</h2>
-      <h2>Top-Related</h2>
+      <h2 onClick={()=>setSelectedOption(request.fetchTrending)}>Trending</h2>
+      <h2 onClick={()=>setSelectedOption(request.fetchTopRated)}>Top-Related</h2>
       <h2>Action</h2>
       <h2>Comedy</h2>
       <h2>Horror</h2>
