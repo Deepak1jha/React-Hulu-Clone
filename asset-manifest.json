@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Hulu-Clone/static/css/main.2b9a83c3.chunk.css",
+    "main.js": "/React-Hulu-Clone/static/js/main.73a0124b.chunk.js",
+    "main.js.map": "/React-Hulu-Clone/static/js/main.73a0124b.chunk.js.map",
+    "runtime-main.js": "/React-Hulu-Clone/static/js/runtime-main.bbc79b16.js",
+    "runtime-main.js.map": "/React-Hulu-Clone/static/js/runtime-main.bbc79b16.js.map",
+    "static/js/2.1598c791.chunk.js": "/React-Hulu-Clone/static/js/2.1598c791.chunk.js",
+    "static/js/2.1598c791.chunk.js.map": "/React-Hulu-Clone/static/js/2.1598c791.chunk.js.map",
+    "index.html": "/React-Hulu-Clone/index.html",
+    "precache-manifest.3893a7ae336f5410cc879340be3aeab8.js": "/React-Hulu-Clone/precache-manifest.3893a7ae336f5410cc879340be3aeab8.js",
+    "service-worker.js": "/React-Hulu-Clone/service-worker.js",
+    "static/css/main.2b9a83c3.chunk.css.map": "/React-Hulu-Clone/static/css/main.2b9a83c3.chunk.css.map",
+    "static/js/2.1598c791.chunk.js.LICENSE.txt": "/React-Hulu-Clone/static/js/2.1598c791.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bbc79b16.js",
+    "static/js/2.1598c791.chunk.js",
+    "static/css/main.2b9a83c3.chunk.css",
+    "static/js/main.73a0124b.chunk.js"
+  ]
+}
